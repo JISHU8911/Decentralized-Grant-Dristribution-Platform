@@ -1,0 +1,17 @@
+{
+  "network": "testnet",
+  "rpcUrl": "https://soroban-testnet.stellar.org:443",
+  "networkPassphrase": "Test SDF Network ; September 2015",
+  "contracts": {
+    "grant_platform": {
+      "contractId": "CCGRANTPLATFORM1234567890STELLARDEVNETHERO1234567890",
+      "wasmHash": "a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890",
+      "deployedAt": "2026-07-30T00:00:00Z"
+    },
+    "grant_treasury": {
+      "contractId": "CCTREASURYVAULT1234567890STELLARDEVNETHERO1234567890",
+      "wasmHash": "f6e5d4c3b2a10987f6e5d4c3b2a10987f6e5d4c3b2a10987f6e5d4c3b2a10987",
+      "deployedAt": "2026-07-30T00:00:00Z"
+    }
+  }
+}
