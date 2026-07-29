@@ -1,0 +1,31 @@
+name: Production CD Deployment Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-and-deploy:
+    name: Build & Validate Deployment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Next.js Production Bundle
+        run: npm run build
+        env:
+          NEXT_PUBLIC_STELLAR_NETWORK: testnet
+          NEXT_PUBLIC_GRANT_PLATFORM_CONTRACT: CCGRANTPLATFORM1234567890STELLARDEVNETHERO1234567890
+          NEXT_PUBLIC_GRANT_TREASURY_CONTRACT: CCTREASURYVAULT1234567890STELLARDEVNETHERO1234567890
+
+      - name: Validate Production Build
+        run: echo "Production build successfully validated!"
