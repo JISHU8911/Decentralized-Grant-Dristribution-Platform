@@ -12,7 +12,7 @@ This DApp enables grant program administrators to register grant initiatives, ap
 - **GitHub Repository**: [https://github.com/JISHU8911/Decentralized-Grant-Dristribution-Platform](https://github.com/JISHU8911/Decentralized-Grant-Dristribution-Platform)
 - **Live Demo**: [Live Production Application](LIVE_DEMO_URL_PLACEHOLDER)
 - **Live Demo Video**: ▶ [Watch Live Demo Video](https://youtu.be/pBQprAIZiIU?si=5_ErCbKaW7HVvKr4)
-- **Contract-Frontend Traceability Matrix**: `docs/CONTRACT_FRONTEND_MAPPING.md` *(Placeholder)*
+- **Contract-Frontend Traceability Matrix**: [`docs/CONTRACT_FRONTEND_MAPPING.md`](docs/CONTRACT_FRONTEND_MAPPING.md)
 - **Deployment Metadata**: [`contracts/deployments.json`](contracts/deployments.json)
 
 📸 Screenshots & Proof of Architecture
@@ -61,7 +61,7 @@ All Soroban smart contracts have been compiled to WASM bytecode (`wasm32-unknown
 🗺 Contract ↔ Frontend Function Traceability Matrix
 Every public Soroban Rust contract function defined in `contracts/grant_platform/src/lib.rs` and `contracts/grant_treasury/src/lib.rs` is bound 1:1 to dedicated contract client wrappers in `src/services/contract.ts`, custom React hooks in `src/hooks/`, and user actions across Next.js UI pages.
 
-For full detailed line-by-line function trace mappings, see `docs/CONTRACT_FRONTEND_MAPPING.md` *(Placeholder)*.
+For full detailed line-by-line function trace mappings, see [`docs/CONTRACT_FRONTEND_MAPPING.md`](docs/CONTRACT_FRONTEND_MAPPING.md).
 
 | Contract Function | Soroban Contract Crate | Client & Hook Binding | UI Location & Action |
 | :--- | :--- | :--- | :--- |
