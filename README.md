@@ -11,7 +11,7 @@ This DApp enables grant program administrators to register grant initiatives, ap
 🔗 Project Links
 - **GitHub Repository**: [https://github.com/JISHU8911/Decentralized-Grant-Dristribution-Platform](https://github.com/JISHU8911/Decentralized-Grant-Dristribution-Platform)
 - **Live Demo**: [Live Production Application](LIVE_DEMO_URL_PLACEHOLDER)
-- **Live Demo Video**: ▶ [Watch Live Demo Video](DEMO_VIDEO_URL_PLACEHOLDER)
+- **Live Demo Video**: ▶ [Watch Live Demo Video](https://youtu.be/pBQprAIZiIU?si=5_ErCbKaW7HVvKr4)
 - **Contract-Frontend Traceability Matrix**: `docs/CONTRACT_FRONTEND_MAPPING.md` *(Placeholder)*
 - **Deployment Metadata**: [`contracts/deployments.json`](contracts/deployments.json)
 
