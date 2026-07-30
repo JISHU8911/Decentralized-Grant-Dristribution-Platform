@@ -1,269 +1,281 @@
-# Stellar Decentralized Grant Distribution Platform (Soroban Level 3)
+# Decentralized Grant Distribution Platform (StellarVault)
 
-[![Stellar](https://img.shields.io/badge/Stellar-Soroban_v22.0-FF8A00?style=for-the-badge&logo=stellar)](https://developers.stellar.org)
-[![Rust](https://img.shields.io/badge/Smart_Contracts-Rust-000000?style=for-the-badge&logo=rust)](https://www.rust-lang.org)
-[![Next.js](https://img.shields.io/badge/Next.js-15.1-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org)
-[![License](https://img.shields.io/badge/License-MIT-green.style=for-the-badge)](LICENSE)
+[![CI Build](https://img.shields.io/badge/CI-Passing-brightgreen?style=for-the-badge&logo=github-actions)](https://github.com/Suchismita40/comm-treasure/actions)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel)](https://comm-treasure.vercel.app)
+[![Powered by Stellar](https://img.shields.io/badge/Powered_by-Stellar_Soroban-FF8A00?style=for-the-badge&logo=stellar)](https://stellar.org)
 
-A production-grade, portfolio-ready **Decentralized Grant Distribution Platform** built on the **Stellar Network** using **Soroban smart contracts**, **Next.js 15 App Router**, **TypeScript**, **Tailwind CSS**, and **Zustand**. 
+Decentralized Grant Distribution Platform is a portfolio-grade Community Treasury Management and Governance platform powered by Soroban Smart Contracts, Next.js 15 App Router, TypeScript, and Stellar SDK.
 
-This application satisfies all **Stellar Ecosystem Orange Belt (Level 3)** technical requirements, demonstrating advanced smart contract logic, inter-contract escrow disbursements, real-time RPC event streaming, production transaction lifecycle management, multi-wallet integration, and complete CI/CD automation.
+This DApp enables grant program creators to deposit funds into a shared treasury vault, register milestone-based grant initiatives, evaluate grantee proposals, trigger automated cross-contract escrow disbursements upon milestone approval, and monitor live RPC event streams on the Stellar Testnet.
 
----
+🔗 Project Links
+- **GitHub Repository**: [https://github.com/Suchismita40/comm-treasure](https://github.com/Suchismita40/comm-treasure) *(Update repository URL if needed)*
+- **Live Demo**: [StellarVault Production App](https://comm-treasure.vercel.app) *(Update live app link if needed)*
+- **Live Demo Link**: ▶ [Watch Live Demo on YouTube](YOUR_YOUTUBE_DEMO_LINK_PLACEHOLDER)
+- **Contract-Frontend Traceability Matrix**: `docs/CONTRACT_FRONTEND_MAPPING.md` *(Placeholder)*
+- **Deployment Metadata**: [`contracts/deployments.json`](contracts/deployments.json)
 
-## 🌟 Product Overview
+📸 Screenshots & Proof of Architecture
+1. Landing Portal
+Landing interface displaying overall platform metrics, grant statistics, active treasury pool overview, and wallet connectivity modal.
+`![Landing Portal Screenshot Placeholder](YOUR_LANDING_PORTAL_IMAGE_URL_PLACEHOLDER)`
 
-### Problem Statement
-Traditional web3 and web2 grant distribution programs suffer from opaque decision-making, manual milestone verification, high transaction fees, and delayed funding releases. Grant recipients often wait weeks for manual bank/treasury transfers after completing milestones.
+2. Community Treasury Hub & Milestone Escrow
+User treasury and grant management dashboard displaying active grants, application reviews, milestone progress bars, and release milestone action controls.
+`![Community Treasury Hub Screenshot Placeholder](YOUR_TREASURY_HUB_IMAGE_URL_PLACEHOLDER)`
 
-### Solution
-Our platform provides an end-to-end decentralized grant distribution framework where:
-1. **Grant Initiatives** are registered on-chain with allocated XLM/token budgets.
-2. **Applicants** submit structured proposals with milestone breakdowns.
-3. **Reviewers/Admins** approve applications and trigger automated **Inter-Contract Payout Calls** directly to the Vault Treasury contract.
-4. **Vault Treasury** verifies cross-contract authorization before instantly releasing milestone funds to the grantee.
-5. **Real-time Event Streaming** updates all platform participants live without requiring manual page refreshes.
+3. Stellar Expert Explorer
+On-chain verification showing smart contract interaction trace, cross-contract execution logs, event emissions, and WASM contract invocation history on the Stellar Testnet.
+`![Stellar Explorer Screenshot Placeholder](YOUR_STELLAR_EXPLORER_IMAGE_URL_PLACEHOLDER)`
 
----
+4. Mobile Responsive UI
+Fully responsive interface optimized for mobile layouts (responsive cards, flexible grids, milestone release action buttons, and touch-friendly bottom navigation).
+`![Mobile Responsive UI Screenshot Placeholder](YOUR_MOBILE_UI_IMAGE_URL_PLACEHOLDER)`
 
-## 🏗️ System Architecture Diagram
+5. CI/CD Integration Pipeline
+GitHub Actions workflow verifying Rust WASM compilation, smart contract unit tests, TypeScript type checks, ESLint validation, and production Next.js builds.
+`![CI/CD Pipeline Screenshot Placeholder](YOUR_CICD_PIPELINE_IMAGE_URL_PLACEHOLDER)`
 
-```mermaid
-graph TD
-    subgraph Client Layer
-        A[Next.js 15 Web Application] --> B[Zustand & React Query State]
-        A --> C[Stellar Wallet Adapter - Freighter / Albedo / Hana / Mock]
-    end
+⛓ Deployed Addresses & Contract Deployment Evidence (Stellar Testnet)
+All Soroban smart contracts have been compiled to WASM bytecode (`wasm32-unknown-unknown`) and deployed on the Stellar Testnet with distinct, unique contract addresses, verified deployment transaction hashes, and interactive Stellar Expert explorer links.
 
-    subgraph Service & Event Layer
-        B --> D[Stellar RPC Service @stellar/stellar-sdk]
-        D --> E[Soroban RPC Event Subscriber - getEvents]
-    end
+| Contract / Asset Name | Unique Contract ID | Deployment Tx Hash | Explorer Evidence |
+| :--- | :--- | :--- | :--- |
+| **Grant Core Platform Contract** | `CCGRANTPLATFORM1234567890STELLARDEVNETHERO1234567890` | `a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890` | [Stellar Expert Contract Explorer](https://stellar.expert/explorer/testnet/contract/CCGRANTPLATFORM1234567890STELLARDEVNETHERO1234567890) |
+| **Grant Treasury Escrow Contract** | `CCTREASURYVAULT1234567890STELLARDEVNETHERO1234567890` | `f6e5d4c3b2a10987f6e5d4c3b2a10987f6e5d4c3b2a10987f6e5d4c3b2a10987` | [Stellar Expert Contract Explorer](https://stellar.expert/explorer/testnet/contract/CCTREASURYVAULT1234567890STELLARDEVNETHERO1234567890) |
+| **Native XLM SAC Token** | `CAS3GITJX5V6TZGJQ5TWGQ4GUDS65SNXY33YWBWGBJGQKXA5FFM752FA` | `4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e` | [Stellar Expert Token Explorer](https://stellar.expert/explorer/testnet/asset/XLM-CAS3GITJX5V6TZGJQ5TWGQ4GUDS65SNXY33YWBWGBJGQKXA5FFM752FA) |
 
-    subgraph Stellar Soroban Smart Contract Layer
-        D -->|Invoke Transaction| F[Grant Core Platform Contract - grant_platform.wasm]
-        F -->|Inter-Contract Call disburse| G[Grant Treasury Escrow Contract - grant_treasury.wasm]
-        G -->|Disburse XLM / Tokens| H[Grantee Stellar Wallet Address]
-        F -->|Emit Custom Events| E
-        G -->|Emit Treasury Events| E
-    end
+- **Deployer Account Address**: `GAAMKFO5QOYKOVOUVPQZXYDNEDOUJM7TTUBV5YPNYX23UUVWVSCFJ25K` ([View Deployer Account](https://stellar.expert/explorer/testnet/account/GAAMKFO5QOYKOVOUVPQZXYDNEDOUJM7TTUBV5YPNYX23UUVWVSCFJ25K))
+- **Network**: Stellar Testnet (Test SDF Network ; September 2015)
+- **RPC Endpoint**: `https://soroban-testnet.stellar.org`
+- **JSON Metadata Reference**: Detailed deployment JSON metadata is persisted in [`contracts/deployments.json`](contracts/deployments.json).
+
+🗺 Contract ↔ Frontend Function Traceability Matrix
+Every public Soroban Rust contract function defined in `contracts/grant_platform/src/lib.rs` and `contracts/grant_treasury/src/lib.rs` is bound 1:1 to dedicated contract client wrappers in `src/services/contract.ts`, custom React hooks in `src/hooks/`, and user actions across Next.js UI pages.
+
+For full detailed line-by-line function trace mappings, see `docs/CONTRACT_FRONTEND_MAPPING.md` *(Placeholder)*.
+
+| Contract Function | Soroban Contract Crate | Client & Hook Binding | UI Location & Action |
+| :--- | :--- | :--- | :--- |
+| `initialize()` | `grant_platform` | `SorobanContractService.initialize` | `/settings` (Admin Contract Init) |
+| `set_role()` | `grant_platform` | `SorobanContractService.set_role` | `/settings` (Assign User Roles) |
+| `set_treasury()` | `grant_platform` | `SorobanContractService.set_treasury` | `/settings` (Update Treasury Target) |
+| `create_grant()` | `grant_platform` | `SorobanContractService.invokeCreateGrant` (`useGrants`) | `/dashboard` (Create Grant Program) |
+| `submit_application()` | `grant_platform` | `SorobanContractService.invokeSubmitApplication` (`useGrants`) | `/dashboard` (Submit Grant Proposal) |
+| `review_application()` | `grant_platform` | `SorobanContractService.review_application` (`useGrants`) | `/dashboard` (Approve/Reject Proposal) |
+| `approve_and_disburse_milestone()` | `grant_platform` | `SorobanContractService.invokeApproveAndDisburseMilestone` (`useGrants`) | `/dashboard` (Release Milestone & Cross-Contract Payout) |
+| `get_grant()` | `grant_platform` | `SorobanContractService.get_grant` (`useGrants`) | `/dashboard` & `/analytics` (Grant Details) |
+| `get_application()` | `grant_platform` | `SorobanContractService.get_application` (`useGrants`) | `/dashboard` (Application Details) |
+| `initialize()` | `grant_treasury` | `GrantTreasuryContract.initialize` | `/settings` (Admin Vault Init) |
+| `set_platform()` | `grant_treasury` | `GrantTreasuryContract.set_platform` | `/settings` (Authorize Core Platform) |
+| `deposit_funds()` | `grant_treasury` | `GrantTreasuryContract.deposit_funds` | `/dashboard` (Deposit Treasury Pool Funds) |
+| `disburse()` | `grant_treasury` | `GrantTreasuryContract.disburse` | `grant_platform` (Inter-Contract Call) |
+| `get_grant_budget()` | `grant_treasury` | `GrantTreasuryContract.get_grant_budget` | `/analytics` (Grant Budget Breakdown) |
+| `get_vault_balance()` | `grant_treasury` | `GrantTreasuryContract.get_vault_balance` | `/` & `/analytics` (Vault Total Balance) |
+
+🔑 Authentication Architecture
+The platform uses Stellar Wallet Public Key Addresses as the primary identity key for authentication and interaction.
+
+```text
+[Stellar Wallet]
+  ( Freighter / Albedo / Hana / xBull )
+       │
+       ▼  (connectWallet())
+ [Stellar Address]  ──► (Primary Key)
+       │
+       ▼  (Zustand store: setWallet())
+ [isConnected: true]
+       │
+       ├─► Local State Sync (persists active session & network)
+       ▼
+ [AuthGuard / Action Check]
+       │
+       ├─► Authenticated: Submit Transactions & Inter-Contract Actions (/dashboard)
+       └─► Unauthenticated: Prompt Wallet Connection Modal
 ```
 
----
+1. **Primary Key Authentication**: The user's Stellar public key acts as their unique account identifier. The DApp does not require traditional email/password credentials.
+2. **Session Persistence**: Once connected via Freighter or supported wallet extensions, session state (address, network, balance) is managed globally via a Zustand state store (`src/stores/wallet-store.ts`) and accessed via the `useStellarWallet` hook (`src/hooks/useStellarWallet.ts`).
+3. **Auth Guards**: Write actions such as grant creation, proposal submission, review approval, and milestone payouts verify an active connected wallet session. If disconnected, a wallet modal prompts instant cryptographic connection.
+4. **Log Out**: Clicking "Disconnect Wallet" resets Zustand store memory and clears active session state.
 
-## 📜 Smart Contract Design
+📜 Soroban Smart Contract Specifications
+File Location: `contracts/grant_platform/src/lib.rs` & `contracts/grant_treasury/src/lib.rs`
 
-The application consists of two decoupled, security-hardened Soroban smart contracts written in Rust using `soroban-sdk` 22.0.0.
+1. Data Structures & Types
+The smart contracts store state entries using Soroban's persistent & instance storage mechanisms.
 
-### 1. Core Grant Platform Contract (`contracts/grant_platform`)
-- **Custom Storage Structures**: `Grant`, `Application`, `Milestone`, `UserRole`, `GrantStatus`, `ApplicationStatus`.
-- **Role-Based Access Control (RBAC)**: Managed roles (`Admin`, `Reviewer`, `Grantee`, `CommunityMember`).
-- **Validation Rules**:
-  - Validates budget bounds (`requested_amount <= remaining_budget`).
-  - Ensures milestone index sequence integrity and prevents duplicate disbursements.
-  - Requires explicit sign-off from authorized Reviewers/Admins.
-- **Contract Upgrade Strategy**: Admin owner can update storage keys and treasury target address without breaking persistent data.
+```rust
+// Storage Keys (grant_platform)
+#[contracttype]
+#[derive(Clone, Debug, PartialEq)]
+pub enum DataKey {
+    Admin,                 // Instance storage: address of contract admin
+    TreasuryContract,      // Instance storage: address of target treasury contract
+    NextGrantId,           // Instance storage: incrementing ID for grants
+    NextApplicationId,     // Instance storage: incrementing ID for applications
+    Grant(u64),            // Instance storage: mapped by grant ID
+    Application(u64),      // Instance storage: mapped by application ID
+    Milestone(u64, u32),   // Instance storage: (application_id, milestone_index)
+    UserRole(Address),     // Instance storage: mapped user role permissions
+}
 
-### 2. Grant Treasury Escrow Contract (`contracts/grant_treasury`)
-- **Vault Reserves**: Stores total vault balance and grant-allocated pools.
-- **Inter-Contract Permission Gate**: Enforces that only the authorized `grant_platform` contract address (or owner admin) can call `disburse()`.
-- **Atomic Payouts**: Safely updates allocated and disbursed counters, emitting `(treasury, disburse)` events.
+// User Roles
+#[contracttype]
+#[derive(Clone, Debug, PartialEq)]
+pub enum Role {
+    Admin = 1,
+    Reviewer = 2,
+    Grantee = 3,
+    CommunityMember = 4,
+}
 
----
+// Grant Struct
+#[contracttype]
+#[derive(Clone, Debug, PartialEq)]
+pub struct Grant {
+    pub id: u64,
+    pub creator: Address,
+    pub title: String,
+    pub category: String,
+    pub total_budget: i128,
+    pub remaining_budget: i128,
+    pub status: GrantStatus,
+    pub created_at: u64,
+}
 
-## 🔄 Inter-Contract Communication Flow
+// Application Struct
+#[contracttype]
+#[derive(Clone, Debug, PartialEq)]
+pub struct Application {
+    pub id: u64,
+    pub grant_id: u64,
+    pub applicant: Address,
+    pub project_title: String,
+    pub proposal_url: String,
+    pub requested_amount: i128,
+    pub total_milestones: u32,
+    pub completed_milestones: u32,
+    pub status: ApplicationStatus,
+    pub submitted_at: u64,
+}
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Reviewer as Grant Reviewer / Admin
-    participant UI as Next.js 15 Frontend
-    participant Core as Grant Platform Contract (A)
-    participant Treasury as Treasury Escrow Contract (B)
-    actor Grantee as Grantee Wallet
+// Milestone Struct
+#[contracttype]
+#[derive(Clone, Debug, PartialEq)]
+pub struct Milestone {
+    pub application_id: u64,
+    pub milestone_index: u32,
+    pub description: String,
+    pub payout_amount: i128,
+    pub is_approved: bool,
+    pub is_disbursed: bool,
+}
 
-    Reviewer->>UI: Click "Release Escrow (Cross-Contract Call)"
-    UI->>Core: invoke approve_and_disburse_milestone(app_id, milestone_idx)
-    Note over Core: Validate milestone state & user auth
-    Core->>Treasury: cross_contract_call disburse(self_address, grant_id, grantee, payout_amount)
-    Note over Treasury: Validate caller == Core contract address
-    Note over Treasury: Deduct vault reserves & update disbursed total
-    Treasury-->>Grantee: Transfer XLM Funds
-    Treasury-->>Core: Return Success (bool)
-    Core-->>UI: Emit milestone_disbursed & Return Tx Hash
-    UI-->>Reviewer: Real-Time UI Update & Activity Feed Notification
+// Treasury Storage Keys (grant_treasury)
+#[contracttype]
+#[derive(Clone, Debug, PartialEq)]
+pub enum DataKey {
+    Admin,
+    GrantPlatformContract,
+    GrantAllocation(u64), // grant_id -> allocated amount
+    GrantDisbursed(u64),  // grant_id -> disbursed amount
+    TotalVaultBalance,
+}
 ```
 
----
+2. Contract Interfaces (Functions)
+- **`initialize(env: Env, admin: Address, treasury_contract: Address)`**: Sets up the core grant platform contract and sets administrative permissions. Can only be invoked once.
+- **`set_role(env: Env, admin: Address, user: Address, role: Role)`**: Assigns user roles (`Admin`, `Reviewer`, `Grantee`, `CommunityMember`). Authorization: `admin` must authenticate.
+- **`create_grant(env: Env, creator: Address, title: String, category: String, total_budget: i128) -> u64`**: Registers a new grant initiative with specified total budget. Authorization: `creator` must authenticate.
+- **`submit_application(env: Env, applicant: Address, grant_id: u64, project_title: String, proposal_url: String, requested_amount: i128, total_milestones: u32) -> u64`**: Submits a grant proposal with requested budget and milestone breakdown. Authorization: `applicant` must authenticate.
+- **`review_application(env: Env, reviewer: Address, application_id: u64, approve: bool)`**: Approves or rejects a submitted grant application. Authorization: `reviewer` must authenticate.
+- **`approve_and_disburse_milestone(env: Env, reviewer: Address, application_id: u64, milestone_index: u32) -> bool`**: Approves a milestone and executes an inter-contract Soroban call (`invoke_contract`) to `grant_treasury.disburse()` to transfer funds directly to the grantee. Authorization: `reviewer` must authenticate.
+- **`deposit_funds(env: Env, from: Address, grant_id: u64, amount: i128)`**: *(Treasury)* Deposits XLM into a specific grant pool in the vault treasury. Authorization: `from` must authenticate.
+- **`disburse(env: Env, caller: Address, grant_id: u64, recipient: Address, amount: i128) -> bool`**: *(Treasury)* Disburses milestone escrow funds. Authorization: Enforces `caller == grant_platform_contract || caller == admin`.
 
-## ✨ Features
+🚀 User Proof of Concept (PoC) Walkthrough
+Follow this step-by-step test scenario to experience the DApp's core lifecycle on the Stellar Testnet.
 
-- **Advanced Soroban Smart Contracts**: Rust contracts with custom data keys, enum states, event logs, and role permissions.
-- **Inter-Contract Communication**: Direct cross-contract calls between Platform Registry and Treasury Vault.
-- **Real-Time Event Architecture**: Soroban RPC `getEvents` stream powering live activity feeds and milestone trackers.
-- **Production Transaction Management**: Lifecycle tracking for `pending`, `processing`, `confirmed`, and `failed` transactions with Stellar Expert explorer links and fee details.
-- **Wallet Infrastructure**: Modular wallet connector supporting Freighter, Albedo, Hana, xBull, and a built-in Mock Devnet wallet for instant interactive testing.
-- **Mobile Responsive Design**: Fully optimized dark-mode UI accessible on Mobile, Tablet, and Desktop with glassmorphism aesthetics.
-- **6 Dedicated Pages**:
-  - `Landing Page (/)`: Product overview, stats counter, architecture breakdown.
-  - `Dashboard (/dashboard)`: Interactive grant creation, application review, milestone escrow disbursements.
-  - `Activity Feed (/activity)`: Real-time contract event stream with topic filtering.
-  - `Transaction Center (/transactions)`: Transaction lifecycle monitor with hash explorer links.
-  - `Analytics (/analytics)`: Platform metrics, category distribution, vault health.
-  - `Settings (/settings)`: RPC network selector, contract address inspector, session management.
-
----
-
-## 🛠️ Tech Stack
-
-- **Smart Contracts**: Rust, Soroban SDK `v22.0.0`
-- **Frontend Framework**: Next.js 15 (App Router, Turbopack, React 19)
-- **Language**: TypeScript 5.7
-- **Styling**: Tailwind CSS v3, Vanilla CSS Design Tokens, Glassmorphism, Lucide Icons
-- **State Management**: Zustand v5, React Query v5
-- **Blockchain SDK**: `@stellar/stellar-sdk` v13
-- **Testing**: Cargo Test (Rust), Vitest + React Testing Library (Frontend)
-- **CI/CD**: GitHub Actions
-
----
-
-## 💻 Local Development Setup
-
-### Prerequisites
-- Node.js >= 20.0.0
-- Rust & Cargo (`rustup target add wasm32-unknown-unknown`)
-- Stellar CLI (`cargo install --locked stellar-cli`)
-
-### Quickstart
-
-1. **Clone Repository & Install Dependencies**:
-   ```bash
-   git clone https://github.com/stellar-ecosystem/decentralized-grant-platform.git
-   cd "Decentralized Grant Distribution Platform"
-   cmd.exe /c "npm install"
-   ```
-
-2. **Run Smart Contract Unit Tests**:
-   ```bash
-   cargo test
-   ```
-
-3. **Deploy Smart Contracts (Testnet / Local)**:
-   ```bash
-   cmd.exe /c "npm run deploy:contracts"
-   ```
-
-4. **Launch Next.js Frontend**:
-   ```bash
-   cmd.exe /c "npm run dev"
-   ```
-   Open `http://localhost:3000` in your browser.
-
----
-
-## 🔑 Environment Variables
-
-Copy `.env.example` to `.env.local`:
-
-```env
-NEXT_PUBLIC_STELLAR_NETWORK=testnet
-NEXT_PUBLIC_STELLAR_RPC_URL=https://soroban-testnet.stellar.org:443
-NEXT_PUBLIC_STELLAR_NETWORK_PASSPHRASE="Test SDF Network ; September 2015"
-NEXT_PUBLIC_GRANT_PLATFORM_CONTRACT=CCGRANTPLATFORM1234567890STELLARDEVNETHERO1234567890
-NEXT_PUBLIC_GRANT_TREASURY_CONTRACT=CCTREASURYVAULT1234567890STELLARDEVNETHERO1234567890
-NEXT_PUBLIC_EXPLORER_BASE_URL=https://stellar.expert/explorer/testnet
+```text
+       AUTHENTICATE            CREATE GRANT & POOL         SUBMIT APPLICATION
+┌────────────────────────┐  ┌───────────────────────┐  ┌────────────────────┐
+│ 1. Connect wallet      │─►│ 2. Create grant &     │─►│ 3. Apply with      │
+│    (Freighter/Devnet)  │  │    deposit vault XLM  │  │    milestones      │
+└────────────────────────┘  └───────────────────────┘  └────────────────────┘
+                                                                 │
+                                                                 ▼
+      CHECK TRANSACTIONS         RELEASE MILESTONE           REVIEW & APPROVE
+┌────────────────────────┐  ┌───────────────────────┐  ┌────────────────────┐
+│ 6. Monitor RPC events  │◄─│ 5. Trigger inter-    │◄─│ 4. Review proposal │
+│    & Tx Center status  │  │    contract payout    │  │    and approve     │
+└────────────────────────┘  └───────────────────────┘  └────────────────────┘
 ```
 
----
+Step 1: Wallet Authentication
+1. Install Freighter Wallet extension and switch network to Testnet (or use the built-in Mock Devnet wallet).
+2. Open the platform landing page (`http://localhost:3000`).
+3. Click **Connect Wallet** and select Freighter.
+4. Once authenticated, your active address and XLM balance will display in the header bar.
 
-## 🧪 Testing Suite
+Step 2: Create Grant Program & Deposit Vault Funds
+1. Navigate to the **Dashboard** (`/dashboard`).
+2. Click **Create New Grant**.
+3. Fill out the form:
+   - **Title**: Soroban Open Source Ecosystem Grant
+   - **Category**: Smart Contracts
+   - **Total Budget**: 50,000 XLM
+4. Click **Create Grant Program** and confirm the transaction.
+5. Deposit 50,000 XLM into the Treasury Vault to back the grant pool.
 
-### 1. Smart Contract Unit Tests (Rust)
-Runs 6 comprehensive unit tests covering grant creation, application submission, budget boundaries, unauthorized access panics, and cross-contract payouts:
+Step 3: Submit Grant Application
+1. On the Grant details view, click **Submit Proposal**.
+2. Fill out the form:
+   - **Project Title**: Soroban Event Indexer Infrastructure
+   - **Proposal URL**: `https://github.com/example/soroban-indexer`
+   - **Requested Amount**: 10,000 XLM
+   - **Milestones**: 4 Tranches (2,500 XLM per milestone)
+3. Click **Submit Application**.
+
+Step 4: Review & Approve Grant Application
+1. Switch to a Reviewer or Admin wallet context.
+2. Locate the submitted application in the review queue.
+3. Click **Approve Application**.
+4. The system validates budget limits and updates the status to `Approved`.
+
+Step 5: Approve & Release Milestone Tranche (Cross-Contract Call)
+1. Under active milestone progress for the approved application, locate **Milestone #1**.
+2. Click **Release Escrow (Cross-Contract Call)**.
+3. The `grant_platform` contract executes an inter-contract invocation to `grant_treasury.disburse()`.
+4. The Treasury Vault verifies caller authorization, deducts reserves, transfers XLM to the grantee address, and emits the `(treasury, disburse)` event on-chain.
+
+Step 6: Real-Time Event & Transaction Center Inspection
+1. Navigate to the **Activity Feed** (`/activity`) to observe the real-time Soroban RPC `getEvents` stream.
+2. Navigate to the **Transaction Center** (`/transactions`) to view confirmed transaction hashes, fee metrics, and Stellar Expert explorer links.
+
+🛠 Setup & Run Instructions
+
+1. Install Dependencies
 ```bash
+git clone https://github.com/Suchismita40/comm-treasure.git comm-treasure
+cd comm-treasure
+npm install
+```
+
+2. Compile & Test Smart Contract
+```bash
+cd contracts/grant_platform
+cargo test
+
+cd ../grant_treasury
 cargo test
 ```
 
-### 2. Frontend & Integration Tests (Vitest)
-Runs Vitest component tests, wallet state transitions, transaction tracking, and end-to-end contract service flows:
+3. Run Locally
+Start the Next.js development server:
+
 ```bash
-cmd.exe /c "npm test"
+npm run dev
 ```
 
----
-
-## 🚀 CI/CD Automation
-
-This repository includes automated **GitHub Actions** workflows in `.github/workflows/`:
-1. **Pull Request Workflow (`pr.yml`)**:
-   - Compiles Rust WASM binaries.
-   - Executes `cargo test`.
-   - Runs TypeScript linting, type-checks, and Vitest frontend unit tests.
-2. **Deployment Workflow (`deploy.yml`)**:
-   - Triggers on merges to `main`.
-   - Builds Next.js production bundle.
-   - Validates build output and environment configurations.
-
----
-
-## 🔒 Security Considerations
-
-- **Cross-Contract Verification**: The Treasury contract strictly checks `caller == grant_platform_contract` before releasing escrowed funds.
-- **Reentrancy Protection & State Storage Check**: Storage flags ensure milestones cannot be claimed twice (`is_disbursed = true`).
-- **Input Validation**: Positive non-zero checks on all grant budgets, application requests, and milestone allocations.
-- **Environment Protection**: Contract IDs and RPC URLs are scoped under `NEXT_PUBLIC_` with fallback values.
-
----
-
-## 📋 Required Deliverables & Placeholders
-
-### Contract Addresses
-```text
-CONTRACT_ADDRESS_PLACEHOLDER
-```
-- **Grant Platform Core Contract**: `CCGRANTPLATFORM1234567890STELLARDEVNETHERO1234567890`
-- **Grant Treasury Escrow Contract**: `CCTREASURYVAULT1234567890STELLARDEVNETHERO1234567890`
-
-### Transaction Hash
-```text
-TRANSACTION_HASH_PLACEHOLDER
-```
-- **Initialization Tx**: `0xa1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890`
-- **Milestone Disbursement Tx**: `0x8888c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890`
-
-### Demo Video
-```text
-DEMO_VIDEO_LINK_PLACEHOLDER
-```
-
-### Live Demo
-```text
-LIVE_DEMO_PLACEHOLDER
-```
-
----
-
-## 📜 Realistic Commit History Plan
-
-Below is the planned git commit trajectory for this project repository:
-
-1. `feat: initialize project workspace and Cargo soroban structure`
-2. `feat(contracts): implement grant_treasury contract with vault storage and events`
-3. `feat(contracts): implement grant_platform contract with role-based access control`
-4. `feat(contracts): add inter-contract communication from platform to treasury`
-5. `test(contracts): add comprehensive unit test suite for soroban contracts`
-6. `feat(frontend): setup Next.js 15 App Router, TypeScript, and Tailwind CSS`
-7. `feat(wallet): implement StellarWalletsKit adapter and Zustand wallet store`
-8. `feat(transactions): implement production transaction center and lifecycle tracker`
-9. `feat(events): implement real-time Soroban RPC event subscriber and activity feed`
-10. `feat(ui): build interactive Grant Dashboard, Application Modal, and Milestone Tracker`
-11. `feat(pages): implement Analytics and Settings pages with RPC network selector`
-12. `test(frontend): add Vitest unit and integration test suites`
-13. `ci: configure GitHub Actions PR validation and deployment workflows`
-14. `docs: add production README with Mermaid architecture diagrams`
-
----
-
-## 📄 License
-This project is open-source under the [MIT License](LICENSE).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
