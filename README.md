@@ -37,6 +37,13 @@ Comprehensive metrics and treasury disbursement analytics across the Stellar Sor
 Developer portal to configure Stellar RPC networks, view deployed smart contract IDs, and manage active session keys.
 ![Settings & Developer Configuration](docs/images/Settings.png)
 
+### 6. Mobile Responsive UI
+Fully responsive interface optimized for mobile viewports (stackable layouts, responsive navigation header, adaptive cards, and mobile milestone release buttons).
+
+| Mobile Landing | Mobile Dashboard | Mobile Analytics |
+| :---: | :---: | :---: |
+| ![Mobile Landing](docs/images/Mobile_Landing.png) | ![Mobile Dashboard](docs/images/Mobile_Dashboard.png) | ![Mobile Analytics](docs/images/Mobile_Analytics.png) |
+
 ⛓ Deployed Addresses & Contract Deployment Evidence (Stellar Testnet)
 All Soroban smart contracts have been compiled to WASM bytecode (`wasm32-unknown-unknown`) and deployed on the Stellar Testnet with distinct, unique contract addresses, verified deployment transaction hashes, and interactive Stellar Expert explorer links.
 
