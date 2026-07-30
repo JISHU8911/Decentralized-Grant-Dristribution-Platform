@@ -16,25 +16,26 @@ This DApp enables grant program administrators to register grant initiatives, ap
 - **Deployment Metadata**: [`contracts/deployments.json`](contracts/deployments.json)
 
 📸 Screenshots & Proof of Architecture
-1. Landing Portal
+
+### 1. Landing Portal
 Landing interface displaying overall vault metrics, total grants proposed, milestone disbursement counters, architecture breakdown, and wallet connectivity.
-`![Landing Portal Screenshot Placeholder](LANDING_PORTAL_IMAGE_PLACEHOLDER)`
+![Landing Portal](docs/images/Landing_Page.png)
 
-2. Grant Dashboard & Milestone Escrow Hub
+### 2. Grant Dashboard & Milestone Escrow Hub
 User treasury dashboard displaying active grant programs, application submissions, milestone tranche progress bars, and cross-contract release funds controls.
-`![Grant Dashboard Screenshot Placeholder](GRANT_DASHBOARD_IMAGE_PLACEHOLDER)`
+![Grant Dashboard](docs/images/Dashboard.png)
 
-3. Stellar Expert Explorer
-On-chain verification showing smart contract interaction trace, cross-contract execution logs, event emissions, and WASM contract invocation history on the Stellar Testnet.
-`![Stellar Explorer Screenshot Placeholder](STELLAR_EXPLORER_IMAGE_PLACEHOLDER)`
+### 3. Real-Time Activity Feed
+Real-time Soroban RPC WebSocket event subscription stream monitoring contract event topics (`grant_created`, `application_submitted`, `milestone_disbursed`).
+![Activity Feed](docs/images/Activity_Feed.png)
 
-4. Mobile Responsive UI
-Fully responsive interface optimized for mobile layout (resizing cards, stackable grids, milestone tranche release buttons, and bottom bar navigation).
-`![Mobile Responsive UI Screenshot Placeholder](MOBILE_UI_IMAGE_PLACEHOLDER)`
+### 4. Platform Analytics
+Comprehensive metrics and treasury disbursement analytics across the Stellar Soroban network.
+![Platform Analytics](docs/images/Analytics.png)
 
-5. CI/CD Integration Pipeline
-GitHub Actions workflow verifying Rust smart contract compilation, cargo unit test suites, linter validations, typescript type-checks, and production bundle builds.
-`![CI/CD Pipeline Screenshot Placeholder](CICD_PIPELINE_IMAGE_PLACEHOLDER)`
+### 5. Settings & Developer Configuration
+Developer portal to configure Stellar RPC networks, view deployed smart contract IDs, and manage active session keys.
+![Settings & Developer Configuration](docs/images/Settings.png)
 
 ⛓ Deployed Addresses & Contract Deployment Evidence (Stellar Testnet)
 All Soroban smart contracts have been compiled to WASM bytecode (`wasm32-unknown-unknown`) and deployed on the Stellar Testnet with distinct, unique contract addresses, verified deployment transaction hashes, and interactive Stellar Expert explorer links.
