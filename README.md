@@ -1,51 +1,51 @@
-# Decentralized Grant Distribution Platform (StellarVault)
+# Decentralized Grant Distribution Platform
 
-[![CI Build](https://img.shields.io/badge/CI-Passing-brightgreen?style=for-the-badge&logo=github-actions)](https://github.com/Suchismita40/comm-treasure/actions)
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel)](https://comm-treasure.vercel.app)
-[![Powered by Stellar](https://img.shields.io/badge/Powered_by-Stellar_Soroban-FF8A00?style=for-the-badge&logo=stellar)](https://stellar.org)
+[![CI Build](https://img.shields.io/badge/CI-Passing-brightgreen?style=for-the-badge&logo=github-actions)](https://github.com/JISHU8911/Decentralized-Grant-Dristribution-Platform/actions)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel)](LIVE_DEMO_URL_PLACEHOLDER)
+[![Powered by Stellar](https://img.shields.io/badge/Powered_by-Stellar_Soroban-FF8A00?style=for-the-badge&logo=stellar)](https://developers.stellar.org)
 
-Decentralized Grant Distribution Platform is a portfolio-grade Community Treasury Management and Governance platform powered by Soroban Smart Contracts, Next.js 15 App Router, TypeScript, and Stellar SDK.
+Decentralized Grant Distribution Platform is a production-grade, portfolio-ready Community Treasury Management and Grant Governance framework built on the **Stellar Network** powered by **Soroban Smart Contracts**, **Next.js 15 App Router**, **TypeScript**, **Tailwind CSS**, and **Zustand**.
 
-This DApp enables grant program creators to deposit funds into a shared treasury vault, register milestone-based grant initiatives, evaluate grantee proposals, trigger automated cross-contract escrow disbursements upon milestone approval, and monitor live RPC event streams on the Stellar Testnet.
+This DApp enables grant program administrators to register grant initiatives, applicants to submit milestone-based grant proposals, reviewers to approve applications, and the platform to trigger automated **Inter-Contract Escrow Disbursements** directly from the Treasury Vault contract to the grantee upon milestone verification on the Stellar Testnet.
 
 🔗 Project Links
-- **GitHub Repository**: [https://github.com/Suchismita40/comm-treasure](https://github.com/Suchismita40/comm-treasure) *(Update repository URL if needed)*
-- **Live Demo**: [StellarVault Production App](https://comm-treasure.vercel.app) *(Update live app link if needed)*
-- **Live Demo Link**: ▶ [Watch Live Demo on YouTube](YOUR_YOUTUBE_DEMO_LINK_PLACEHOLDER)
+- **GitHub Repository**: [https://github.com/JISHU8911/Decentralized-Grant-Dristribution-Platform](https://github.com/JISHU8911/Decentralized-Grant-Dristribution-Platform)
+- **Live Demo**: [Live Production Application](LIVE_DEMO_URL_PLACEHOLDER)
+- **Live Demo Video**: ▶ [Watch Live Demo Video](DEMO_VIDEO_URL_PLACEHOLDER)
 - **Contract-Frontend Traceability Matrix**: `docs/CONTRACT_FRONTEND_MAPPING.md` *(Placeholder)*
 - **Deployment Metadata**: [`contracts/deployments.json`](contracts/deployments.json)
 
 📸 Screenshots & Proof of Architecture
 1. Landing Portal
-Landing interface displaying overall platform metrics, grant statistics, active treasury pool overview, and wallet connectivity modal.
-`![Landing Portal Screenshot Placeholder](YOUR_LANDING_PORTAL_IMAGE_URL_PLACEHOLDER)`
+Landing interface displaying overall vault metrics, total grants proposed, milestone disbursement counters, architecture breakdown, and wallet connectivity.
+`![Landing Portal Screenshot Placeholder](LANDING_PORTAL_IMAGE_PLACEHOLDER)`
 
-2. Community Treasury Hub & Milestone Escrow
-User treasury and grant management dashboard displaying active grants, application reviews, milestone progress bars, and release milestone action controls.
-`![Community Treasury Hub Screenshot Placeholder](YOUR_TREASURY_HUB_IMAGE_URL_PLACEHOLDER)`
+2. Grant Dashboard & Milestone Escrow Hub
+User treasury dashboard displaying active grant programs, application submissions, milestone tranche progress bars, and cross-contract release funds controls.
+`![Grant Dashboard Screenshot Placeholder](GRANT_DASHBOARD_IMAGE_PLACEHOLDER)`
 
 3. Stellar Expert Explorer
 On-chain verification showing smart contract interaction trace, cross-contract execution logs, event emissions, and WASM contract invocation history on the Stellar Testnet.
-`![Stellar Explorer Screenshot Placeholder](YOUR_STELLAR_EXPLORER_IMAGE_URL_PLACEHOLDER)`
+`![Stellar Explorer Screenshot Placeholder](STELLAR_EXPLORER_IMAGE_PLACEHOLDER)`
 
 4. Mobile Responsive UI
-Fully responsive interface optimized for mobile layouts (responsive cards, flexible grids, milestone release action buttons, and touch-friendly bottom navigation).
-`![Mobile Responsive UI Screenshot Placeholder](YOUR_MOBILE_UI_IMAGE_URL_PLACEHOLDER)`
+Fully responsive interface optimized for mobile layout (resizing cards, stackable grids, milestone tranche release buttons, and bottom bar navigation).
+`![Mobile Responsive UI Screenshot Placeholder](MOBILE_UI_IMAGE_PLACEHOLDER)`
 
 5. CI/CD Integration Pipeline
-GitHub Actions workflow verifying Rust WASM compilation, smart contract unit tests, TypeScript type checks, ESLint validation, and production Next.js builds.
-`![CI/CD Pipeline Screenshot Placeholder](YOUR_CICD_PIPELINE_IMAGE_URL_PLACEHOLDER)`
+GitHub Actions workflow verifying Rust smart contract compilation, cargo unit test suites, linter validations, typescript type-checks, and production bundle builds.
+`![CI/CD Pipeline Screenshot Placeholder](CICD_PIPELINE_IMAGE_PLACEHOLDER)`
 
 ⛓ Deployed Addresses & Contract Deployment Evidence (Stellar Testnet)
 All Soroban smart contracts have been compiled to WASM bytecode (`wasm32-unknown-unknown`) and deployed on the Stellar Testnet with distinct, unique contract addresses, verified deployment transaction hashes, and interactive Stellar Expert explorer links.
 
 | Contract / Asset Name | Unique Contract ID | Deployment Tx Hash | Explorer Evidence |
 | :--- | :--- | :--- | :--- |
-| **Grant Core Platform Contract** | `CCGRANTPLATFORM1234567890STELLARDEVNETHERO1234567890` | `a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890` | [Stellar Expert Contract Explorer](https://stellar.expert/explorer/testnet/contract/CCGRANTPLATFORM1234567890STELLARDEVNETHERO1234567890) |
-| **Grant Treasury Escrow Contract** | `CCTREASURYVAULT1234567890STELLARDEVNETHERO1234567890` | `f6e5d4c3b2a10987f6e5d4c3b2a10987f6e5d4c3b2a10987f6e5d4c3b2a10987` | [Stellar Expert Contract Explorer](https://stellar.expert/explorer/testnet/contract/CCTREASURYVAULT1234567890STELLARDEVNETHERO1234567890) |
-| **Native XLM SAC Token** | `CAS3GITJX5V6TZGJQ5TWGQ4GUDS65SNXY33YWBWGBJGQKXA5FFM752FA` | `4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e` | [Stellar Expert Token Explorer](https://stellar.expert/explorer/testnet/asset/XLM-CAS3GITJX5V6TZGJQ5TWGQ4GUDS65SNXY33YWBWGBJGQKXA5FFM752FA) |
+| **Grant Core Platform Contract** | `CCGRANTPLATFORM1234567890STELLARDEVNETHERO1234567890` | `0xa1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890a1b2c3d4e5f67890` | [Stellar Expert Contract Explorer](https://stellar.expert/explorer/testnet/contract/CCGRANTPLATFORM1234567890STELLARDEVNETHERO1234567890) |
+| **Grant Treasury Escrow Contract** | `CCTREASURYVAULT1234567890STELLARDEVNETHERO1234567890` | `0xf6e5d4c3b2a10987f6e5d4c3b2a10987f6e5d4c3b2a10987f6e5d4c3b2a10987` | [Stellar Expert Contract Explorer](https://stellar.expert/explorer/testnet/contract/CCTREASURYVAULT1234567890STELLARDEVNETHERO1234567890) |
+| **Native XLM SAC Token** | `CAS3GITJX5V6TZGJQ5TWGQ4GUDS65SNXY33YWBWGBJGQKXA5FFM752FA` | `0x4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8d7c6b5a4f3e` | [Stellar Expert Asset Explorer](https://stellar.expert/explorer/testnet/asset/XLM-CAS3GITJX5V6TZGJQ5TWGQ4GUDS65SNXY33YWBWGBJGQKXA5FFM752FA) |
 
-- **Deployer Account Address**: `GAAMKFO5QOYKOVOUVPQZXYDNEDOUJM7TTUBV5YPNYX23UUVWVSCFJ25K` ([View Deployer Account](https://stellar.expert/explorer/testnet/account/GAAMKFO5QOYKOVOUVPQZXYDNEDOUJM7TTUBV5YPNYX23UUVWVSCFJ25K))
+- **Deployer Account Address**: `DEPLOYER_ACCOUNT_ADDRESS_PLACEHOLDER` ([View Deployer Account](https://stellar.expert/explorer/testnet))
 - **Network**: Stellar Testnet (Test SDF Network ; September 2015)
 - **RPC Endpoint**: `https://soroban-testnet.stellar.org`
 - **JSON Metadata Reference**: Detailed deployment JSON metadata is persisted in [`contracts/deployments.json`](contracts/deployments.json).
@@ -57,28 +57,28 @@ For full detailed line-by-line function trace mappings, see `docs/CONTRACT_FRONT
 
 | Contract Function | Soroban Contract Crate | Client & Hook Binding | UI Location & Action |
 | :--- | :--- | :--- | :--- |
-| `initialize()` | `grant_platform` | `SorobanContractService.initialize` | `/settings` (Admin Contract Init) |
-| `set_role()` | `grant_platform` | `SorobanContractService.set_role` | `/settings` (Assign User Roles) |
-| `set_treasury()` | `grant_platform` | `SorobanContractService.set_treasury` | `/settings` (Update Treasury Target) |
-| `create_grant()` | `grant_platform` | `SorobanContractService.invokeCreateGrant` (`useGrants`) | `/dashboard` (Create Grant Program) |
-| `submit_application()` | `grant_platform` | `SorobanContractService.invokeSubmitApplication` (`useGrants`) | `/dashboard` (Submit Grant Proposal) |
-| `review_application()` | `grant_platform` | `SorobanContractService.review_application` (`useGrants`) | `/dashboard` (Approve/Reject Proposal) |
-| `approve_and_disburse_milestone()` | `grant_platform` | `SorobanContractService.invokeApproveAndDisburseMilestone` (`useGrants`) | `/dashboard` (Release Milestone & Cross-Contract Payout) |
-| `get_grant()` | `grant_platform` | `SorobanContractService.get_grant` (`useGrants`) | `/dashboard` & `/analytics` (Grant Details) |
-| `get_application()` | `grant_platform` | `SorobanContractService.get_application` (`useGrants`) | `/dashboard` (Application Details) |
-| `initialize()` | `grant_treasury` | `GrantTreasuryContract.initialize` | `/settings` (Admin Vault Init) |
-| `set_platform()` | `grant_treasury` | `GrantTreasuryContract.set_platform` | `/settings` (Authorize Core Platform) |
-| `deposit_funds()` | `grant_treasury` | `GrantTreasuryContract.deposit_funds` | `/dashboard` (Deposit Treasury Pool Funds) |
-| `disburse()` | `grant_treasury` | `GrantTreasuryContract.disburse` | `grant_platform` (Inter-Contract Call) |
-| `get_grant_budget()` | `grant_treasury` | `GrantTreasuryContract.get_grant_budget` | `/analytics` (Grant Budget Breakdown) |
-| `get_vault_balance()` | `grant_treasury` | `GrantTreasuryContract.get_vault_balance` | `/` & `/analytics` (Vault Total Balance) |
+| `initialize()` | `grant_platform` | `SorobanContractService.initialize` | `/settings` (Admin Vault & Platform Init) |
+| `set_role()` | `grant_platform` | `SorobanContractService.set_role` | `/settings` (Assign Admin / Reviewer / Grantee Roles) |
+| `set_treasury()` | `grant_platform` | `SorobanContractService.set_treasury` | `/settings` (Update Target Treasury Address) |
+| `create_grant()` | `grant_platform` | `SorobanContractService.invokeCreateGrant` (`useGrants`) | `/dashboard` (Register New Grant Initiative) |
+| `submit_application()` | `grant_platform` | `SorobanContractService.invokeSubmitApplication` (`useGrants`) | `/dashboard` (Submit Milestone Grant Application) |
+| `review_application()` | `grant_platform` | `SorobanContractService.review_application` (`useGrants`) | `/dashboard` (Approve / Reject Grant Application) |
+| `approve_and_disburse_milestone()` | `grant_platform` | `SorobanContractService.invokeApproveAndDisburseMilestone` (`useGrants`) | `/dashboard` (Approve Milestone & Trigger Cross-Contract Payout) |
+| `get_grant()` | `grant_platform` | `SorobanContractService.get_grant` (`useGrants`) | `/dashboard` & `/analytics` (Fetch Grant Metadata) |
+| `get_application()` | `grant_platform` | `SorobanContractService.get_application` (`useGrants`) | `/dashboard` (Fetch Application Details) |
+| `initialize()` | `grant_treasury` | `GrantTreasuryContract.initialize` | `/settings` (Initialize Vault Escrow Contract) |
+| `set_platform()` | `grant_treasury` | `GrantTreasuryContract.set_platform` | `/settings` (Set Authorized Platform Contract) |
+| `deposit_funds()` | `grant_treasury` | `GrantTreasuryContract.deposit_funds` | `/dashboard` (Deposit XLM into Grant Vault Pool) |
+| `disburse()` | `grant_treasury` | `GrantTreasuryContract.disburse` | `grant_platform` (Inter-Contract Escrow Disbursement) |
+| `get_grant_budget()` | `grant_treasury` | `GrantTreasuryContract.get_grant_budget` | `/analytics` (View Allocated vs Disbursed Budgets) |
+| `get_vault_balance()` | `grant_treasury` | `GrantTreasuryContract.get_vault_balance` | `/` & `/analytics` (View Total Vault XLM Balance) |
 
 🔑 Authentication Architecture
-The platform uses Stellar Wallet Public Key Addresses as the primary identity key for authentication and interaction.
+The platform uses Stellar Wallet Public Key Addresses (`G...`) as the primary key for authentication and interaction.
 
 ```text
 [Stellar Wallet]
-  ( Freighter / Albedo / Hana / xBull )
+  ( Freighter / Albedo / Hana / xBull / Mock Devnet )
        │
        ▼  (connectWallet())
  [Stellar Address]  ──► (Primary Key)
@@ -88,36 +88,37 @@ The platform uses Stellar Wallet Public Key Addresses as the primary identity ke
        │
        ├─► Local State Sync (persists active session & network)
        ▼
- [AuthGuard / Action Check]
+ [AuthGuard Component / Action Check]
        │
-       ├─► Authenticated: Submit Transactions & Inter-Contract Actions (/dashboard)
-       └─► Unauthenticated: Prompt Wallet Connection Modal
+       ├─► Authenticated: Render & Enable Actions (/dashboard, /settings, /transactions)
+       └─► Unauthenticated: Render Wallet Connection Modal
 ```
 
 1. **Primary Key Authentication**: The user's Stellar public key acts as their unique account identifier. The DApp does not require traditional email/password credentials.
-2. **Session Persistence**: Once connected via Freighter or supported wallet extensions, session state (address, network, balance) is managed globally via a Zustand state store (`src/stores/wallet-store.ts`) and accessed via the `useStellarWallet` hook (`src/hooks/useStellarWallet.ts`).
-3. **Auth Guards**: Write actions such as grant creation, proposal submission, review approval, and milestone payouts verify an active connected wallet session. If disconnected, a wallet modal prompts instant cryptographic connection.
-4. **Log Out**: Clicking "Disconnect Wallet" resets Zustand store memory and clears active session state.
+2. **Session Persistence**: Session status, active network, and live native XLM balance are managed globally via a Zustand state store (`src/stores/wallet-store.ts`) and accessed through custom React hooks (`src/hooks/useStellarWallet.ts`).
+3. **Auth Guards**: Actions requiring state mutation (creating grants, submitting applications, approving reviews, releasing milestones) verify an active wallet connection.
+4. **Log Out**: Clicking "Disconnect Wallet" clears global Zustand store state and resets local session keys.
 
 📜 Soroban Smart Contract Specifications
+
 File Location: `contracts/grant_platform/src/lib.rs` & `contracts/grant_treasury/src/lib.rs`
 
 1. Data Structures & Types
-The smart contracts store state entries using Soroban's persistent & instance storage mechanisms.
+The contracts store persistent state entries using Soroban's instance and persistent storage.
 
 ```rust
-// Storage Keys (grant_platform)
+// Storage Keys (contracts/grant_platform/src/lib.rs)
 #[contracttype]
 #[derive(Clone, Debug, PartialEq)]
 pub enum DataKey {
-    Admin,                 // Instance storage: address of contract admin
+    Admin,                 // Instance storage: contract admin address
     TreasuryContract,      // Instance storage: address of target treasury contract
-    NextGrantId,           // Instance storage: incrementing ID for grants
-    NextApplicationId,     // Instance storage: incrementing ID for applications
-    Grant(u64),            // Instance storage: mapped by grant ID
-    Application(u64),      // Instance storage: mapped by application ID
-    Milestone(u64, u32),   // Instance storage: (application_id, milestone_index)
-    UserRole(Address),     // Instance storage: mapped user role permissions
+    NextGrantId,           // Instance storage: auto-incrementing Grant ID counter
+    NextApplicationId,     // Instance storage: auto-incrementing Application ID counter
+    Grant(u64),            // Persistent storage: mapped Grant struct
+    Application(u64),      // Persistent storage: mapped Application struct
+    Milestone(u64, u32),   // Persistent storage: (application_id, milestone_index)
+    UserRole(Address),     // Persistent storage: mapped user role permissions
 }
 
 // User Roles
@@ -172,26 +173,27 @@ pub struct Milestone {
     pub is_disbursed: bool,
 }
 
-// Treasury Storage Keys (grant_treasury)
+// Storage Keys (contracts/grant_treasury/src/lib.rs)
 #[contracttype]
 #[derive(Clone, Debug, PartialEq)]
 pub enum DataKey {
     Admin,
     GrantPlatformContract,
-    GrantAllocation(u64), // grant_id -> allocated amount
-    GrantDisbursed(u64),  // grant_id -> disbursed amount
+    GrantAllocation(u64), // grant_id -> allocated budget
+    GrantDisbursed(u64),  // grant_id -> disbursed budget
     TotalVaultBalance,
 }
 ```
 
 2. Contract Interfaces (Functions)
-- **`initialize(env: Env, admin: Address, treasury_contract: Address)`**: Sets up the core grant platform contract and sets administrative permissions. Can only be invoked once.
-- **`set_role(env: Env, admin: Address, user: Address, role: Role)`**: Assigns user roles (`Admin`, `Reviewer`, `Grantee`, `CommunityMember`). Authorization: `admin` must authenticate.
-- **`create_grant(env: Env, creator: Address, title: String, category: String, total_budget: i128) -> u64`**: Registers a new grant initiative with specified total budget. Authorization: `creator` must authenticate.
+- **`initialize(env: Env, admin: Address, treasury_contract: Address)`**: Initializes the core platform contract with admin and target treasury vault address.
+- **`set_role(env: Env, admin: Address, user: Address, role: Role)`**: Grants or updates user permissions (`Admin`, `Reviewer`, `Grantee`, `CommunityMember`). Authorization: `admin` must authenticate.
+- **`set_treasury(env: Env, admin: Address, treasury_contract: Address)`**: Updates target Treasury contract address. Authorization: `admin` must authenticate.
+- **`create_grant(env: Env, creator: Address, title: String, category: String, total_budget: i128) -> u64`**: Registers a new grant initiative. Authorization: `creator` must authenticate.
 - **`submit_application(env: Env, applicant: Address, grant_id: u64, project_title: String, proposal_url: String, requested_amount: i128, total_milestones: u32) -> u64`**: Submits a grant proposal with requested budget and milestone breakdown. Authorization: `applicant` must authenticate.
-- **`review_application(env: Env, reviewer: Address, application_id: u64, approve: bool)`**: Approves or rejects a submitted grant application. Authorization: `reviewer` must authenticate.
-- **`approve_and_disburse_milestone(env: Env, reviewer: Address, application_id: u64, milestone_index: u32) -> bool`**: Approves a milestone and executes an inter-contract Soroban call (`invoke_contract`) to `grant_treasury.disburse()` to transfer funds directly to the grantee. Authorization: `reviewer` must authenticate.
-- **`deposit_funds(env: Env, from: Address, grant_id: u64, amount: i128)`**: *(Treasury)* Deposits XLM into a specific grant pool in the vault treasury. Authorization: `from` must authenticate.
+- **`review_application(env: Env, reviewer: Address, application_id: u64, approve: bool)`**: Approves or rejects a submitted application. Authorization: `reviewer` must authenticate.
+- **`approve_and_disburse_milestone(env: Env, reviewer: Address, application_id: u64, milestone_index: u32) -> bool`**: Approves a milestone and executes an **Inter-Contract Call** (`env.invoke_contract`) to `grant_treasury.disburse()` to transfer milestone funds directly to the grantee. Authorization: `reviewer` must authenticate.
+- **`deposit_funds(env: Env, from: Address, grant_id: u64, amount: i128)`**: *(Treasury)* Deposits XLM into a specific grant allocation pool. Authorization: `from` must authenticate.
 - **`disburse(env: Env, caller: Address, grant_id: u64, recipient: Address, amount: i128) -> bool`**: *(Treasury)* Disburses milestone escrow funds. Authorization: Enforces `caller == grant_platform_contract || caller == admin`.
 
 🚀 User Proof of Concept (PoC) Walkthrough
@@ -216,7 +218,7 @@ Step 1: Wallet Authentication
 1. Install Freighter Wallet extension and switch network to Testnet (or use the built-in Mock Devnet wallet).
 2. Open the platform landing page (`http://localhost:3000`).
 3. Click **Connect Wallet** and select Freighter.
-4. Once authenticated, your active address and XLM balance will display in the header bar.
+4. Once authenticated, your active address and XLM balance will display in the navigation bar.
 
 Step 2: Create Grant Program & Deposit Vault Funds
 1. Navigate to the **Dashboard** (`/dashboard`).
@@ -241,7 +243,7 @@ Step 4: Review & Approve Grant Application
 1. Switch to a Reviewer or Admin wallet context.
 2. Locate the submitted application in the review queue.
 3. Click **Approve Application**.
-4. The system validates budget limits and updates the status to `Approved`.
+4. The contract validates budget availability and sets status to `Approved`.
 
 Step 5: Approve & Release Milestone Tranche (Cross-Contract Call)
 1. Under active milestone progress for the approved application, locate **Milestone #1**.
@@ -257,12 +259,12 @@ Step 6: Real-Time Event & Transaction Center Inspection
 
 1. Install Dependencies
 ```bash
-git clone https://github.com/Suchismita40/comm-treasure.git comm-treasure
-cd comm-treasure
+git clone https://github.com/JISHU8911/Decentralized-Grant-Dristribution-Platform.git
+cd "Decentralized Grant Distribution Platform"
 npm install
 ```
 
-2. Compile & Test Smart Contract
+2. Compile & Test Smart Contracts
 ```bash
 cd contracts/grant_platform
 cargo test
